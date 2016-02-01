@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Date and Time</title>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+
+<h1><center>AngularJS App Test</center></h1>
+<p style="text-align:right"><a href='http://localhost:8081/DateSrv/Info.jsp'>show Date</a></p>
+<hr>
+<h3><marquee>Welcome to AngularJs programming Test app!</marquee></h3><hr>
+
+ 
+ <center>
+<h3><p>Dear user, please input your details:</p></h3>
+Name 	: <input type="text" ng-model="name" placeholder="Enter name here">
+Age 	: <input type="text" ng-model="age" placeholder="Specify your current age">	
+Address : <input type="text" ng-model="address" placeholder="local address">
+City 	: <input type="text" ng-model="city" placeholder="Current city">
+Pincode : <input type="text" ng-model="pincode" placeholder="6 digit pincode">
+
+</center>
+
+<br>
+<form action="http://developerorg.comlu.com/">
+<h3><u>Declaration</u>:</h3>
+
+I do hereby confirm that the following information is true to the best of my knowledge:
+<p>Name    : <b> {{name}}      </b> </p>
+<p>Age     : <b> {{age}}       </b> </p>
+<p>Address : <b> {{address}}   </b> </p>
+<p>City    : <b> {{city}}      </b> </p>
+<p>Pincode : <b> {{pincode}}   </b> </p>
+I will be solely responsible for any information found to be incorrect or inappropriate. I understand that my application will be rejected and I may be issue a penalty on behalf of the company.
+<br>
+</br>
+<center><input type="submit" value="Confirm"> &nbsp; <input type="Submit" value="Cancel"></center>
+</form>
+</div>
+<br></br>
+<br></br>
+
+<h6><left>Copyright 2010 - 2016 <a href="http://www.aashish.co.in">rbashish</a> </left></h6>
+
+</body>
+</html>
